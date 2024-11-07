@@ -1,0 +1,11 @@
+services:
+  cpp_dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cpp_dev
+    container_name: cpp_dev
+    volumes:
+      - .:/src
+    stdin_open: true
+    tty: true
