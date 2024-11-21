@@ -8,5 +8,6 @@ RUN apt update && \
     libssl-dev
 
 WORKDIR /src
+COPY exec.sh /src/exec.sh
 
 RUN chmod +x /src/exec.sh
